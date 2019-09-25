@@ -1,0 +1,63 @@
+extends layout
+
+block content
+  h1 EmployeeX
+  i Employee Directory Services 
+  br
+
+  // Wrapper
+  #wrapper
+    br
+    // EMPLOYEE LIST
+    h2 List
+    #employeeList
+      table.table-hover
+        thead
+          th Name
+          th Position
+          th Delete
+        tbody
+    // /EMPLOYEE LIST
+
+    // EMPLOYEE INFO
+    #employeeInfo
+      br
+      h2 Info
+      p
+        strong Name:
+        |  <span id='employeeInfoName'></span>
+        br
+        strong Position:
+        |  <span id='employeeInfoPosition'></span>
+        br
+        strong Office:
+        |  <span id='employeeInfoOffice'></span>
+        br
+        strong Age:
+        |  <span id='employeeInfoAge'></span>
+        br
+        strong Gender:
+        |  <span id='employeeInfoGender'></span>
+        br
+        strong Salary:
+        |  <span id='employeeInfoSalary'></span>
+    // /EMPLOYEE INFO
+
+    // ADD EMPLOYEE
+    h2 Add 
+    #addEmployee
+      fieldset
+        input.form-control-sm#inputEmployeeName(type='text', placeholder='Name')
+        input.form-control-sm#inputEmployeePosition(type='text', placeholder='Position')
+        br
+        input.form-control-sm#inputEmployeeOffice(type='text', placeholder='Office')
+        input.form-control-sm#inputEmployeeAge(type='text', placeholder='Age')
+        br
+        input.form-control-sm#inputEmployeeGender(type='text', placeholder='Gender')
+        input.form-control-sm#inputEmployeeSalary(type='text', placeholder='Salary')
+        br
+        br
+        button.btn.btn-primary#btnAddEmployee Add
+    // /ADD EMPLOYEE
+
+  // /WRAPPER

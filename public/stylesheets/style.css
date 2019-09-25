@@ -1,0 +1,57 @@
+* {
+	background-color: rgb(255, 255, 255);
+}
+
+
+h2 {
+	margin:0 0 .5em 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#wrapper {
+	padding-left:312px;
+	position:relative;
+}
+
+#employeeList {
+	margin:0 0 0px 0;
+}
+	#employeeList table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background:#CCC;
+	}
+		#employeeList table th {
+			background:#EEE;
+			padding:10px 20px;
+			text-align:center;
+		}
+		#employeeList table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			#employeeList table td {
+				background:#FFF;
+				padding:5px 10px;
+				text-align:center;
+			}
+
+#employeeInfo {
+	width:250px;
+	position:absolute;
+	top:0; left:0;
+}
+	#employeeInfo p {
+		padding:15px;
+		border:1px solid #CCC;
+		background:#fff
+	}
+
+fieldset {
+	border:0;
+	padding:3; margin:0;
+}
